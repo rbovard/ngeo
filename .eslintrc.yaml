@@ -1,6 +1,6 @@
 extends:
-- openlayers
-- plugin:@typescript-eslint/recommended
+  - openlayers
+  - plugin:@typescript-eslint/recommended
 env:
   jquery: true
 parserOptions:
@@ -35,3 +35,7 @@ rules:
     - error
   '@typescript-eslint/restrict-plus-operands':
     - error
+  '@typescript-eslint/ban-ts-ignore': 0
+  '@typescript-eslint/explicit-function-return-type': 0
+  '@typescript-eslint/no-var-requires': 0
+  '@typescript-eslint/no-empty-function': 0
