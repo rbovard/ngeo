@@ -123,6 +123,7 @@ function gmfAuthenticationTemplateUrl($element, $attrs, gmfAuthenticationTemplat
  */
 const authenticationComponent = {
   bindings: {
+    'twoFactorAuth': '<?gmfAuthenticationTwoFactorAuth',
     'allowPasswordReset': '<?gmfAuthenticationAllowPasswordReset',
     'allowPasswordChange': '<?gmfAuthenticationAllowPasswordChange',
     'passwordValidator': '<?gmfAuthenticationPasswordValidator',
@@ -190,6 +191,11 @@ class AuthenticationController {
     /**
      * @type {boolean}
      */
+    this.twoFactorAuth = false;
+
+    /**
+     * @type {boolean}
+     */
     this.allowPasswordReset = false;
 
     /**
@@ -244,6 +250,11 @@ class AuthenticationController {
      */
     this.pwdVal = '';
 
+    /**
+     * @type {string}
+     */
+    this.otpVal;
+
     // CHANGE PASSWORD form values
 
     /**
@@ -266,6 +277,7 @@ class AuthenticationController {
    * Initialise the controller.
    */
   $onInit() {
+    this.twoFactorAuth = this.twoFactorAuth === true;
     this.allowPasswordReset = this.allowPasswordReset !== false;
     this.allowPasswordChange = this.allowPasswordChange !== false;
     this.forcePasswordChange = this.forcePasswordChange === true;
@@ -349,10 +361,13 @@ class AuthenticationController {
     if (this.pwdVal === '') {
       errors.push(gettextCatalog.getString('The password is required.'));
     }
+    if (this.twoFactorAuth && this.otpVal === undefined) {
+      errors.push(gettextCatalog.getString('The authentication code is required.'));
+    }
     if (errors.length) {
       this.setError_(errors);
     } else {
-      this.gmfAuthenticationService_.login(this.loginVal, this.pwdVal)
+      this.gmfAuthenticationService_.login(this.loginVal, this.pwdVal, this.otpVal)
         .then(() => {
           this.resetError_();
         })
