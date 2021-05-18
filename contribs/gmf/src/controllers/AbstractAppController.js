@@ -784,6 +784,19 @@ myModule.config([
   },
 ]);
 
+myModule.run(
+  /**
+   * @ngInject
+   * @param {angular.ITemplateCacheService} $templateCache
+   * @param {import('gmf/options.js').gmfTemplates} gmfTemplates
+   */
+  ($templateCache, gmfTemplates) => {
+    for (const templateName in gmfTemplates) {
+      $templateCache.put(templateName, gmfTemplates[templateName]);
+    }
+  }
+);
+
 bootstrap(myModule);
 
 export default myModule;

@@ -172,18 +172,6 @@ const appModule = angular.module('Appoeedit', [
   gmfObjecteditingModule.name,
 ]);
 
-appModule.value('gmfContextualdatacontentTemplateUrl', 'gmf/contextualdata');
-appModule.run(
-  /**
-   * @ngInject
-   * @param {angular.ITemplateCacheService} $templateCache
-   */
-  ($templateCache) => {
-    // @ts-ignore: webpack
-    $templateCache.put('gmf/contextualdata', require('./contextualdata.html'));
-  }
-);
-
 appModule.value(
   'gmfPermalinkOptions',
   /** @type {import('gmf/options.js').gmfPermalinkOptions} */ ({

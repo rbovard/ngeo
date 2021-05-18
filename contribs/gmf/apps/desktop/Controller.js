@@ -67,18 +67,6 @@ class Controller extends AbstractDesktopController {
  */
 const appModule = angular.module('Appdesktop', [appBase.name, gmfControllersAbstractDesktopController.name]);
 
-appModule.value('gmfContextualdatacontentTemplateUrl', 'gmf/contextualdata');
-appModule.run(
-  /**
-   * @ngInject
-   * @param {angular.ITemplateCacheService} $templateCache
-   */
-  ($templateCache) => {
-    // @ts-ignore: webpack
-    $templateCache.put('gmf/contextualdata', require('./contextualdata.html'));
-  }
-);
-
 appModule.controller('DesktopController', Controller);
 
 export default appModule;

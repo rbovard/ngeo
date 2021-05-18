@@ -178,6 +178,11 @@
  */
 
 /**
+ * The application templates definitions (URL => value).
+ * @typedef {Object<string, string>} gmfTemplates
+ */
+
+/**
  * The available projections definitions.
  * @typedef {Object<string, import('api/options.js').Projection>} gmfProjectionsOptions
  */
