@@ -24,7 +24,7 @@
 import angular from 'angular';
 import * as olProj from 'ol/proj.js';
 
-import EPSG21781 from '@geoblocks/proj/EPSG_21781.js';
+import EPSG2056 from 'ngeo/proj/EPSG_2056.js';
 
 import olGeomPoint from 'ol/geom/Point.js';
 import olFeature from 'ol/Feature.js';
@@ -78,7 +78,7 @@ export function createLocationSearchBloodhound(opt_options) {
   /** @type {LocationSearchOptions} */
   const options = opt_options || {};
 
-  const sourceProjection = olProj.get(EPSG21781);
+  const sourceProjection = olProj.get(EPSG2056);
   const targetProjection = options.targetProjection;
 
   /**

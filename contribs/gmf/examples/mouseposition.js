@@ -23,8 +23,7 @@ import './mouseposition.css';
 import angular from 'angular';
 import gmfMapModule from 'gmf/map/module.js';
 
-import EPSG2056 from '@geoblocks/proj/EPSG_2056.js';
-import EPSG21781 from '@geoblocks/proj/EPSG_21781.js';
+import EPSG2056 from 'ngeo/proj/EPSG_2056.js';
 import olMap from 'ol/Map.js';
 import olView from 'ol/View.js';
 import olLayerTile from 'ol/layer/Tile.js';
@@ -66,11 +65,6 @@ myModule.constant('gmfMousePositionOptions', {
       code: EPSG2056,
       label: 'CH1903+ / LV95',
       filter: 'ngeoNumberCoordinates:0:Coordinates (m)&#58; {x}, {y}',
-    },
-    {
-      code: EPSG21781,
-      label: 'CH1903 / LV03',
-      filter: 'ngeoNumberCoordinates:2:[{x} E; {y} N]',
     },
     {
       code: 'EPSG:4326',

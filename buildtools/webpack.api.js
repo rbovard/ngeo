@@ -88,7 +88,6 @@ module.exports = (env, argv) => {
     resolve: {
       alias: {
         'api': path.resolve(__dirname, '../api/src'),
-        '@geoblocks/proj': '@geoblocks/proj/src',
       },
     },
   };
