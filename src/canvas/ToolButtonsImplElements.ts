@@ -24,42 +24,8 @@ import {customElement} from 'lit/decorators';
 import ToolButtonElement from 'gmfapi/elements/ToolButtonElement';
 import i18next from 'i18next';
 import 'bootstrap/js/src/tooltip';
-import user, {User} from 'gmfapi/store/user';
 import {state} from 'lit/decorators';
 import panels from 'gmfapi/store/panels';
-
-@customElement('gmf-button-auth')
-export class ToolButtonAuth extends ToolButtonElement {
-  constructor() {
-    super('auth');
-  }
-  @state() private login_ = false;
-
-  connectedCallback(): void {
-    super.connectedCallback();
-    this.subscriptions.push(
-      user.getProperties().subscribe({
-        next: (properties: User) => {
-          this.login_ = !!properties.username;
-        },
-      })
-    );
-  }
-
-  render(): TemplateResult {
-    return html`
-      <button
-        @click=${() => this.click_()}
-        class="btn btn-default ${this.active_ ? 'active' : ''}"
-        data-toggle="tooltip"
-        data-placement="left"
-        data-original-title="${i18next.t('Login')}"
-      >
-        <span class="fa fa-user ${this.login_ ? 'fa-user-times' : 'fa-user'}"></span>
-      </button>
-    `;
-  }
-}
 
 @customElement('gmf-button-print')
 export class ToolButtonPrint extends ToolButtonElement {

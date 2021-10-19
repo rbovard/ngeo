@@ -20,5 +20,11 @@
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 module.exports = {
-  entry: './contribs/gmf/apps/desktop_alt/Controller.js',
+  entry: './contribs/gmf/apps/iframe_api/Controller.js',
+  output: {
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    libraryExport: 'default',
+    library: 'iframeapi',
+  },
 };
