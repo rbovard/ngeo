@@ -23,7 +23,6 @@ import angular from 'angular';
 import gmfPermalinkModule from 'gmf/permalink/module';
 import gmfEditingSnapping from 'gmf/editing/Snapping';
 import gmfFileDropZoneModule from 'gmf/dropfile/module';
-import ngeoMapModule from 'ngeo/map/module';
 import ngeoMapFeatureOverlayMgr from 'ngeo/map/FeatureOverlayMgr';
 
 /**
@@ -34,7 +33,6 @@ const myModule = angular.module('gmfMapComponent', [
   gmfPermalinkModule.name,
   gmfEditingSnapping.name,
   gmfFileDropZoneModule.name,
-  ngeoMapModule.name,
   ngeoMapFeatureOverlayMgr.name,
 ]);
 
