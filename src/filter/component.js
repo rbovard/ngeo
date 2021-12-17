@@ -32,7 +32,7 @@ import ngeoRuleGeometry from 'ngeo/rule/Geometry';
 import ngeoMapFeatureOverlay from 'ngeo/map/FeatureOverlay';
 import {getUid as olUtilGetUid} from 'ol/util';
 import {remove as removeFromArray} from 'ol/array';
-import 'ngeo/sass/gmf-font.scss';
+import 'ngeo/sass/font.scss';
 import panels from 'gmfapi/store/panels';
 
 /**

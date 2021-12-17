@@ -26,7 +26,7 @@ import {getRowUid} from 'ngeo/grid/Config';
 
 import 'floatthead';
 import 'angular-float-thead';
-import 'ngeo/sass/gmf-font.scss';
+import 'ngeo/sass/font.scss';
 
 /**
  * @type {angular.IModule}

@@ -34,7 +34,7 @@ import olStyleStroke from 'ol/style/Stroke';
 import olGeomPoint from 'ol/geom/Point';
 import olInteractionModify from 'ol/interaction/Modify';
 import olInteractionDraw from 'ol/interaction/Draw';
-import 'ngeo/sass/gmf-font.scss';
+import 'ngeo/sass/font.scss';
 
 /**
  * @type {angular.IModule}

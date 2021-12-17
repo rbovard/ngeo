@@ -35,7 +35,7 @@ import olStyleStroke from 'ol/style/Stroke';
 import {toLonLat} from 'ol/proj';
 import olFeature from 'ol/Feature';
 import olGeomLineString from 'ol/geom/LineString';
-import 'ngeo/sass/gmf-font.scss';
+import 'ngeo/sass/font.scss';
 
 /**
  * @typedef {Object} RoutingVia
