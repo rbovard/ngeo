@@ -229,7 +229,7 @@ module.exports = function (config) {
           if (file.endsWith('src/bootstrap-custom.css')) {
             return false;
           }
-          if (file.endsWith('contribs/gmf/src/css/reset.css')) {
+          if (file.endsWith('/src/css/reset.css')) {
             return false;
           }
           return true;
