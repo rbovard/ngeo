@@ -102,7 +102,7 @@ myModule.run(
    */
   ($templateCache) => {
     // @ts-ignore: webpack
-    $templateCache.put('gmf/layertree', require('./component.html'));
+    $templateCache.put('gmfold/layertree', require('./component.html'));
   }
 );
 
@@ -924,7 +924,7 @@ Controller.prototype.toggleNodeMenu = function (menuNodeId) {
 };
 
 /**
- * @param {import('gmf/datasource/OGC').default} ds Data source to filter.
+ * @param {import('gmfold/datasource/OGC').default} ds Data source to filter.
  */
 Controller.prototype.toggleFiltrableDataSource = function (ds) {
   this.gmfDataSourceBeingFiltered.dataSource = ds;
