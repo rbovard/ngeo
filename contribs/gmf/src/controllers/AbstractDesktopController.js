@@ -173,6 +173,10 @@ export class AbstractDesktopController extends AbstractAPIController {
         panels === 'print' ? (this.printPanelActive = true) : (this.printPanelActive = false);
         $timeout(() => {}); // this triggered on DOM click, we call $timeout to force Angular diggest
 
+        if (panels === 'profile'){
+          this.ngeoToolActivateMgr.activateTool(drawProfilePanelActivate);
+        }
+
         if (panels === null || !panels.includes('auth')) {
           user.setLoginMessage(LoginMessageState.EMPTY);
         }
