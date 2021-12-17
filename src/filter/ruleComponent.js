@@ -48,7 +48,7 @@ import olStyleText from 'ol/style/Text';
 import olStyleFill from 'ol/style/Fill';
 import {CollectionEvent} from 'ol/Collection';
 import Feature from 'ol/Feature';
-import 'ngeo/sass/font.scss';
+import 'ngeo/sass/gmf-font.scss';
 
 /**
  * @typedef {Object} MenuEventTarget

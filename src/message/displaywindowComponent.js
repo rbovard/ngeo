@@ -21,7 +21,7 @@
 
 import angular from 'angular';
 
-import 'ngeo/sass/font.scss';
+import 'ngeo/sass/gmf-font.scss';
 import 'jquery-ui/ui/widgets/resizable';
 import 'jquery-ui/ui/widgets/draggable';
 import 'ngeo/sass/jquery-ui.scss';
