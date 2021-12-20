@@ -27,6 +27,8 @@ import gmfLayertreeSyncLayertreeMap from 'gmf/layertree/SyncLayertreeMap';
 import gmfLayertreeTimeSliderComponent from 'gmf/layertree/timeSliderComponent';
 import gmfLayertreeTreeManager from 'gmf/layertree/TreeManager';
 
+import './common.scss';
+
 /**
  * Also related to the map but not included in the module:
  *  - ngeo.layertree.Controller (already required by ngeo.layertree.component)
