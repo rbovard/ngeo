@@ -91,7 +91,9 @@ export class DatasourceHelper {
    * @returns {?import('gmfold/datasource/OGC').default} Data source.
    */
   getDataSource(id) {
-    return /** @type {?import('gmfold/datasource/OGC').default} */ this.ngeoDataSourcesHelper_.getDataSource(id);
+    return /** @type {?import('gmfold/datasource/OGC').default} */ this.ngeoDataSourcesHelper_.getDataSource(
+      id
+    );
   }
 
   /**
