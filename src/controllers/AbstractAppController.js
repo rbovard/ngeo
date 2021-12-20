@@ -26,12 +26,12 @@ import 'angular-dynamic-locale';
 import bootstrap from 'gmf/controllers/bootstrap';
 import gmfBackgroundlayerselectorComponent from 'gmf/backgroundlayerselector/component';
 import {gmfBackgroundlayerStatus} from 'gmf/backgroundlayerselector/status';
-import gmfDatasourceModule from 'gmf/datasource/module';
+import ngeoDatasourceModule from 'ngeo/datasource/module';
 import gmfDisclaimerComponent from 'gmf/disclaimer/component';
-import gmfLayertreeModule from 'gmf/layertree/module';
-import gmfMapModule from 'gmf/map/module';
+import ngeoLayertreeModule from 'ngeo/layertree/module';
+import ngeoMapModule from 'ngeo/map/module';
 import gmfQueryExtraModule from 'gmf/query/extraModule';
-import gmfSearchModule from 'gmf/search/module';
+import ngeoSearchModule from 'ngeo/search/module';
 import gmfThemeModule from 'gmf/theme/module';
 import calculateCssVars from 'gmf/controllers/calculateCssVars';
 import ngeoMessageDisplaywindowComponent from 'ngeo/message/displaywindowComponent';
@@ -763,12 +763,12 @@ const myModule = angular.module('GmfAbstractAppControllerModule', [
   'tmh.dynamicLocale',
   //'ngSentry',
   gmfBackgroundlayerselectorComponent.name,
-  gmfDatasourceModule.name,
+  ngeoDatasourceModule.name,
   gmfDisclaimerComponent.name,
-  gmfLayertreeModule.name,
-  gmfMapModule.name,
+  ngeoLayertreeModule.name,
+  ngeoMapModule.name,
   gmfQueryExtraModule.name,
-  gmfSearchModule.name,
+  ngeoSearchModule.name,
   gmfThemeModule.name,
   ngeoMessageDisplaywindowComponent.name,
   ngeoMiscExtraModule.name,

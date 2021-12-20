@@ -40,22 +40,15 @@ import ngeoStatemanagerWfsPermalink from 'ngeo/statemanager/WfsPermalink';
 import ngeoMiscExtraModule from 'ngeo/misc/extraModule';
 import gmfBackgroundlayerselectorModule from 'gmf/backgroundlayerselector/module';
 import gmfContextualdataModule from 'gmf/contextualdata/module';
-import gmfDatasourceModule from 'gmf/datasource/module';
 import gmfDisclaimerModule from 'gmf/disclaimer/module';
 import gmfDrawingModule from 'gmf/drawing/module';
-import gmfEditingModule from 'gmf/editing/module';
 import gmfFiltersModule from 'gmf/filters/module';
 import gmfHeaderModule from 'gmf/header/module';
 import gmfImportModule from 'gmf/import/module';
-import gmfLayertreeModule from 'gmf/layertree/module';
 import gmfLidarprofileModule from 'gmf/lidarprofile/module';
-import gmfMapModule from 'gmf/map/module';
 import gmfObjecteditingModule from 'gmf/objectediting/module';
 import gmfPermalinkModule from 'gmf/permalink/module';
-import gmfPrintModule from 'gmf/print/module';
-import gmfProfileModule from 'gmf/profile/module';
 import gmfRasterModule from 'gmf/raster/module';
-import gmfSearchModule from 'gmf/search/module';
 import gmfThemeModule from 'gmf/theme/module';
 
 export default angular.module('ngeo', [
@@ -79,21 +72,14 @@ export default angular.module('ngeo', [
   ngeoMiscExtraModule.name,
   gmfBackgroundlayerselectorModule.name,
   gmfContextualdataModule.name,
-  gmfDatasourceModule.name,
   gmfDisclaimerModule.name,
   gmfDrawingModule.name,
-  gmfEditingModule.name,
   gmfFiltersModule.name,
   gmfHeaderModule.name,
   gmfImportModule.name,
-  gmfLayertreeModule.name,
   gmfLidarprofileModule.name,
-  gmfMapModule.name,
   gmfObjecteditingModule.name,
   gmfPermalinkModule.name,
-  gmfPrintModule.name,
-  gmfProfileModule.name,
   gmfRasterModule.name,
-  gmfSearchModule.name,
   gmfThemeModule.name,
 ]);
