@@ -18,7 +18,7 @@
     "build-gmf-apps-profile": "TARGET=gmf-apps webpack --profile --json > profile.json",
     "typecheck": "tsc --noEmit",
     "doc": "typedoc",
-    "jsdoc": "jsdoc contribs/gmf/src/themes.js src/options.js contribs/gmf/src/options.js api/src/options.js --configure jsdoc/config.json --destination jsdoc/build",
+    "jsdoc": "jsdoc src/themes.js src/options.js api/src/options.js --configure jsdoc/config.json --destination jsdoc/build",
     "build-storybook": "NODE_ENV=env TARGET=ngeo-examples build-storybook --output-dir=.build/storybook",
     "storybook": "NODE_ENV=env TARGET=ngeo-examples start-storybook --port=6006",
     "storybook-ci": "NODE_ENV=env TARGET=ngeo-examples start-storybook --port=6006 --ci",
