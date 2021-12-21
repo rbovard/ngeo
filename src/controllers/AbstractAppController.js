@@ -43,6 +43,7 @@ import ngeoQueryComponent from 'ngeo/query/component';
 import ngeoStatemanagerModule from 'ngeo/statemanager/module';
 import ngeoStatemanagerWfsPermalink from 'ngeo/statemanager/WfsPermalink';
 import ngeoGeolocation from 'ngeo/geolocation/component';
+import gmfMapComponent from 'gmfold/map/component';
 import * as olArray from 'ol/array';
 import {ThemeEventType} from 'gmf/theme/Manager';
 import {getBrowserLanguage} from 'ngeo/utils';
@@ -778,6 +779,7 @@ const myModule = angular.module('GmfAbstractAppControllerModule', [
   ngeoStatemanagerModule.name,
   ngeoStatemanagerWfsPermalink.name,
   ngeoGeolocation.name,
+  gmfMapComponent.name,
 ]);
 
 myModule.controller('AbstractController', AbstractAppController);
