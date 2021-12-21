@@ -26,6 +26,8 @@ import ngeoSearchCreateLocationSearchBloodhound from 'ngeo/search/createLocation
 import gmfSearchComponent from 'gmf/search/component';
 import gmfSearchFulltextSearch from 'gmf/search/FulltextSearch';
 
+import './search.scss';
+
 /**
  * @type {angular.IModule}
  */
